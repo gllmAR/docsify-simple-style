@@ -1,40 +1,42 @@
 :root {
-  --theme-color: #ff69b4; /* Default pink color */
-  --theme-color-hover: #ff82bc;
+  --theme-hue: 330; /* Default hue value, adjust this to change the color */
+  --theme-color: hsl(var(--theme-hue), 100%, 70%); /* Default color using hue */
+  --theme-color-hover: hsl(var(--theme-hue), 100%, 75%);
   --theme-background: #ffffff;
   --theme-text: #34495e;
   --theme-border: rgba(0, 0, 0, 0.07);
-  --theme-highlight: #ff69b4; /* Pink */
+  --theme-highlight: hsl(var(--theme-hue), 100%, 70%); /* Highlight color */
   --theme-highlight-text: #ffffff;
-  --theme-link: #ff69b4; /* Pink */
-  --theme-link-hover: #ff82bc; /* Pink hover */
-  --theme-bold-text: #2c3e50; /* Default bold text color */
-  --code-background: #f8f8f8; /* Light mode code block background */
-  --code-text: #525252; /* Light mode code text color */
-  --code-syntax: #e96900; /* Light mode syntax highlight color */
-  --sidebar-background: #ffffff; /* Light mode sidebar background */
-  --sidebar-text: #505d6b; /* Light mode sidebar text color */
-  --sidebar-active-text: var(--theme-color); /* Light mode sidebar active text color */
+  --theme-link: hsl(var(--theme-hue), 100%, 70%);
+  --theme-link-hover: hsl(var(--theme-hue), 100%, 75%);
+  --theme-bold-text: #2c3e50;
+  --code-background: #f8f8f8;
+  --code-text: #525252;
+  --code-syntax: hsl(var(--theme-hue), 100%, 50%);
+  --sidebar-background: #ffffff;
+  --sidebar-text: #505d6b;
+  --sidebar-active-text: var(--theme-color);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --theme-color: #ff69b4; /* Pink */
-    --theme-color-hover: #ff82bc; /* Pink hover */
+    --theme-color: hsl(var(--theme-hue), 100%, 70%);
+    --theme-color-hover: hsl(var(--theme-hue), 100%, 75%);
     --theme-background: #1e1e1e;
     --theme-text: #e0e0e0;
     --theme-border: rgba(255, 255, 255, 0.1);
-    --theme-link: #ff69b4; /* Pink */
-    --theme-link-hover: #ff82bc; /* Pink hover */
-    --theme-bold-text: #ffffff; /* Brighter bold text color for dark mode */
-    --code-background: #2d2d2d; /* Dark mode code block background */
-    --code-text: #cccccc; /* Dark mode code text color */
-    --code-syntax: #ffcc00; /* Dark mode syntax highlight color */
-    --sidebar-background: #2e2e2e; /* Dark mode sidebar background */
-    --sidebar-text: #cccccc; /* Dark mode sidebar text color */
-    --sidebar-active-text: var(--theme-color); /* Dark mode sidebar active text color */
+    --theme-link: hsl(var(--theme-hue), 100%, 70%);
+    --theme-link-hover: hsl(var(--theme-hue), 100%, 75%);
+    --theme-bold-text: #ffffff;
+    --code-background: #2d2d2d;
+    --code-text: #cccccc;
+    --code-syntax: hsl(var(--theme-hue), 100%, 50%);
+    --sidebar-background: #2e2e2e;
+    --sidebar-text: #cccccc;
+    --sidebar-active-text: var(--theme-color);
   }
 }
+
 
 * {
   -webkit-font-smoothing: antialiased;
