@@ -39,3 +39,107 @@ In your docsify `index.html` after loading
         --theme-brightness: 65%; /* Adjust the brightness */
     }
 </style>
+```
+
+
+## Test content
+
+This Markdown file will test all the components affected by the style. Below are sections demonstrating headers, paragraphs, lists, tables, blockquotes, and task lists.
+
+---
+
+### Headers
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+
+---
+
+### Paragraphs & Text Styles
+
+This is a standard paragraph.
+
+*This text is italicized.*
+
+**This text is bold.**
+
+_**This text is bold and italic.**_
+
+---
+
+### Links
+
+[Docsify Documentation](https://docsify.js.org)
+
+---
+
+### Blockquotes
+
+> This is a blockquote to test the styling of blockquotes in the theme.
+
+---
+
+### Lists
+
+#### Unordered List:
+- Item 1
+  - Sub-item 1
+  - Sub-item 2
+- Item 2
+
+#### Ordered List:
+1. First item
+2. Second item
+   1. Nested first
+   2. Nested second
+
+---
+
+### Task List
+
+- [x] Task 1 (Completed)
+- [ ] Task 2 (Incomplete)
+
+---
+
+### Tables
+
+| Name    | Age | Profession     |
+|---------|-----|----------------|
+| Alice   | 28  | Developer      |
+| Bob     | 32  | Designer       |
+| Charlie | 25  | Data Scientist |
+
+---
+
+### Emoji
+
+This is an emoji: 😊  
+More emojis: 🚀 🎉 💻
+
+---
+
+## Tips and Warnings
+
+#### Tip
+> **Tip:** This is a tip for the user.
+
+#### Warning
+> **Warning:** This is a warning for the user.
+
+---
+
+### Keyboard Input
+
+Press `Ctrl + C` to copy.
+
+---
+
+### Images
+
+![Docsify Logo](https://docsify.js.org/_media/icon.svg)
+
