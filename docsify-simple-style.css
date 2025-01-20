@@ -1056,3 +1056,8 @@ code .token {
   position: relative;
   left: auto;
 }
+
+.search input {
+  text-align: right !important;
+}
+
